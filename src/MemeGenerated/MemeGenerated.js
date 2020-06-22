@@ -12,8 +12,6 @@ export const MemeGenerated = () => {
   const location = useLocation();
   const url = new URLSearchParams(location.search).get('url');
 
-  console.log(url);
-
   const copyLink = () => {
     clipboard.copy(url);
     setCopied(true);
